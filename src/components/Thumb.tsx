@@ -39,7 +39,7 @@ const Thumb = ({ color = 'darcyan', trackHeight, size = 15, style }: Props) => {
       height: size + 4,
       backgroundColor: color,
       zIndex: 1,
-      borderRadius: size / 2,
+      borderRadius: (size + 4)/ 2,
       overflow: 'hidden'
     }
    
