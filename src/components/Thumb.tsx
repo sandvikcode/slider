@@ -33,9 +33,23 @@ const Thumb = ({ color = 'darcyan', trackHeight, size = 15, style }: Props) => {
     },
     style
   )
+    const thumbOuterViewStyle = RN.StyleSheet.compose(
+    {
+      width: size + 3,
+      height: size + 3,
+      backgroundColor: color,
+      zIndex: 1,
+      borderRadius: size / 2,
+      overflow: 'hidden',
+      userSelect: 'none'
+    }
+  )
 
   return <RN.View pointerEvents="none" style={thumbContainerStyle}>
-    <RN.View style={thumbViewStyle} />
+    <RN.View style={thumbOuterViewStyle}>
+         <RN.View style={thumbViewStyle}/>     
+    </RN.View>
+    
   </RN.View>
 }
 
