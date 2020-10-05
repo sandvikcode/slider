@@ -35,8 +35,8 @@ const Thumb = ({ color = 'darcyan', trackHeight, size = 15, style }: Props) => {
   )
     
   const thumbOuterViewStyle: RN.ViewStyle = {
-      width: size + 3,
-      height: size + 3,
+      width: size + 4,
+      height: size + 4,
       backgroundColor: color,
       zIndex: 1,
       borderRadius: size / 2,
