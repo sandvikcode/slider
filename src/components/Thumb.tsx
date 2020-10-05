@@ -40,8 +40,7 @@ const Thumb = ({ color = 'darcyan', trackHeight, size = 15, style }: Props) => {
       backgroundColor: color,
       zIndex: 1,
       borderRadius: size / 2,
-      overflow: 'hidden',
-      userSelect: 'none'
+      overflow: 'hidden'
     }
    
   return <RN.View pointerEvents="none" style={thumbContainerStyle}>
