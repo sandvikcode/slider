@@ -23,7 +23,7 @@ const Track = ({ style, thickness, length, vertical, color = 'grey' }: Props) =>
   {
     [vertical ? 'width' : 'height']: thickness
   },
-  style] as RN.Animated.WithAnimatedValue<RN.StyleProp<RN.ViewStyle>>
+  style] as RN.StyleProp<RN.ViewStyle>
 
   return <RN.View pointerEvents="none" style={trackViewStyle} />
 }
